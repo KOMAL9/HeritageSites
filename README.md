@@ -51,6 +51,11 @@ Start Frontend Server:
 cd frontend
 npm start
 
+Future Enhancements:
+Authentication & Authorization
+Admin panel for site management
+User comments & ratings for heritage sites
+
 Notes :
 Ensure the backend is running before launching the frontend.
 The project is currently minimal and does not include authentication/authorization.
