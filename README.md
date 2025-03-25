@@ -1,4 +1,5 @@
 This is a MERN stack web application that showcases World Heritage Sites from India and around the world. 
+
 The site features:
 A Landing Page displaying various heritage sites with tags and a search box.
 
@@ -52,9 +53,9 @@ cd frontend
 npm start
 
 Future Enhancements:
-Authentication & Authorization
-Admin panel for site management
-User comments & ratings for heritage sites
+Authentication & Authorization.
+Admin panel for site management.
+User comments & ratings for heritage sites.
 
 Notes :
 Ensure the backend is running before launching the frontend.
