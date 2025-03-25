@@ -1,15 +1,12 @@
-This is a MERN stack web application that showcases World Heritage Sites from India and around the world. 
+*This is a MERN stack web application that showcases World Heritage Sites from India and around the world*
 
 The site features:
-A Landing Page displaying various heritage sites with tags and a search box.
+a)A Landing Page displaying various heritage sites with tags and a search box.
+b)Clicking on a heritage site leads to a detailed page with site-specific information.
+c)A "Heritage & Updates" button provides recent updates and historical details about the site.
+d)Users can explore general information about heritage sites at the bottom of the landing page.
 
-Clicking on a heritage site leads to a detailed page with site-specific information.
-
-A "Heritage & Updates" button provides recent updates and historical details about the site.
-
-Users can explore general information about heritage sites at the bottom of the landing page.
-
-Technologies Used
+Technologies Used:
 
 Frontend: React.js ,javascript,HTML5,CSS3
 Backend: Node.js with Express.js
@@ -53,10 +50,10 @@ cd frontend
 npm start
 
 Future Enhancements:
-Authentication & Authorization.
-Admin panel for site management.
-User comments & ratings for heritage sites.
+a)Authentication & Authorization.
+b)Admin panel for site management.
+c)User comments & ratings for heritage sites.
 
 Notes :
-Ensure the backend is running before launching the frontend.
-The project is currently minimal and does not include authentication/authorization.
+a)Ensure the backend is running before launching the frontend.
+b)The project is currently minimal and does not include authentication/authorization.
