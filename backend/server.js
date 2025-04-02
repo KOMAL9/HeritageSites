@@ -2,26 +2,22 @@ require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
+const connectDB = require("./config/db");
+
 const heritageRoutes = require("./routes/heritageRoutes");
 
 const app = express();
-
-// Middleware
 app.use(express.json());
 app.use(cors());
+connectDB();
 
-// Connect to MongoDB
-mongoose
-  .connect(process.env.MONGO_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+
+mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log("✅ MongoDB Connected"))
-  .catch((err) => console.error("MongoDB Connection Error:", err));
+  .catch((err) => console.log("MongoDB Connection Error:", err));
 
-// API Routes
+
 app.use("/api/heritage-sites", heritageRoutes);
 
-// Start Server
 const PORT = process.env.PORT || 5001;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

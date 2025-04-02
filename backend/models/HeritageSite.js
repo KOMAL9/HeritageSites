@@ -16,7 +16,10 @@ const HeritageSiteSchema = new mongoose.Schema({
     lat: { type: Number, required: true },
     lng: { type: Number, required: true },
   },
-  established_date: { type: Date, required: true },
+  established_date: { type: String, required: true },
+  recent_developments: { type: String },
+  tags: { type: [String], required: true },
+  moreInfo: { type: [String] }, // 🔹 New field added for additional details
 });
 
 module.exports = mongoose.model("HeritageSite", HeritageSiteSchema);
